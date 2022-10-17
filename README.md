@@ -1,3 +1,3 @@
-# watch-friends.github.io
+# Watch-Friends
 
-https://watch-friends.github.io/
+https://yuvam2017.github.io/watch-friends
