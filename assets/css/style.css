@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300&family=Open+Sans:wght@300;400&family=Pacifico&family=Poppins:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.font-pac {
+    font-family: 'Pacifico', cursive;
+}
+
+.font-open {
+    font-family: 'Open-sans', sans-serif;
+}
+
+.font-pop {
+	font-family: 'Poppins', sans-serif;
+}
+
+.font-mon {
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+.heading {
+	margin-top: 2rem;
+	font-size: 2rem;
+	font-weight: bolder;
+ 	transition-duration: 300ms;
+ }
+
+ .heading:hover {
+ 	cursor: pointer;
+ 	color: #f97316;
+ }
+
+.quote {
+    vertical-align: top;
+    color: #B2B7F2;
+    font-size: 35px;
+    font-family: 'Times New Roman',serif;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px 10px;
+}
+
+.bold {
+    font-weight: 800;
+}

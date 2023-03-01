@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Friends | Watch Friends Online</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header">
+        <nav class="bg-black p-3 pl-4 text-white flex justify-between">
+            <ul class="flex justify-between lg:justify-start font-bold text-lg font-mon items-center">
+                <li class="p-2 mr-3 font-pac text-2xl lg:text-3xl"><a href="/">Watch Friends</a></li>
+                <li class="hidden lg:block p-2 hover:text-[#fb923c] duration-300 ease-in-out mr-3 ml-4"><a href="/">Home</a></li>
+                <li class="hidden lg:block p-2 hover:text-[#fb923c] duration-300 ease-in-out mr-3 ml-3"><a href="#about">About
+                        'Friends'</a></li>
+                <li class="hidden lg:block p-2 hover:text-[#fb923c] duration-300 ease-in-out mr-3 ml-3"><a href="#cast">Cast</a></li>
+                <li class="hidden lg:block p-2 hover:text-[#fb923c] duration-300 ease-in-out mr-3 ml-3"><a href="./friends.html">Watch 'Friends'</a></li>
+                <li class="hidden lg:block  p-2 hover:text-[#fb923c] duration-300 ease-in-out mr-3 ml-3"><a target="_blank" href="https://en.wikipedia.org/wiki/Friends">Wikipedia</a></li>
+            </ul>
+            <ul id="mobileNavBar" class="hidden absolute flex justify-center flex-col top-[10%] p-2 left-0 w-full z-20 bg-black">
+                <li class="lg:hidden block p-2 hover:text-[#fb923c] duration-300 ease-in-out mr-3 ml-4"><a href="/">Home</a></li>
+                <li class="lg:hidden block p-2 hover:text-[#fb923c] duration-300 ease-in-out mr-3 ml-3"><a href="#about">About
+                        'Friends'</a></li>
+                <li class="lg:hidden block p-2 hover:text-[#fb923c] duration-300 ease-in-out mr-3 ml-3"><a href="#cast">Cast</a></li>
+                <li class="lg:hidden block p-2 hover:text-[#fb923c] duration-300 ease-in-out mr-3 ml-3"><a href="./friends.html">Watch 'Friends'</a></li>
+                <li class="lg:hidden block  p-2 hover:text-[#fb923c] duration-300 ease-in-out mr-3 ml-3"><a target="_blank" href="https://en.wikipedia.org/wiki/Friends">Wikipedia</a></li>
+            </ul>
+            <button id="menuBar" class="lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </nav>
+    </div>
+    <div class="flex justify-center items-center w-full">
+        <div class="relative">
+            <img src="./assets/images/img6.jpg" class="w-full md:w-[100vw] object-cover h-auto md:h-[90vh] ">
+            <a href="./friends.html" class="bg-yellow-500 p-3 text-sm lg:text-xl font-bold z-1 absolute uppercase hover:bg-yellow-400 top-3/4 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black text-black lg:p-5 lg:pl-6 lg:pr-6 flex justify-center items-center">Watch
+                Now</a>
+        </div>
+    </div>
+    <div id="about" class="about-us m-5">
+        <p class="heading text-[1.5rem] lg:text-[2rem]">About 'Friends'</p>
+        <p class="mt-4 text-base lg:text-lg">Friends is an American television sitcom created by David Crane and Marta Kauffman,
+            which aired on NBC from September 22, 1994, to May 6, 2004, lasting ten seasons. With an ensemble cast
+            starring Jennifer Aniston, Courteney Cox, Lisa Kudrow, Matt LeBlanc, Matthew Perry and David Schwimmer, the
+            show revolves around six friends in their 20s and 30s who live in Manhattan, New York City. The series was
+            produced by Bright/Kauffman/Crane Productions, in association with Warner Bros. Television. The original
+            executive producers were Kevin S. Bright, Kauffman, and Crane.</p>
+        <p id="cast" class="heading text-[1.5rem] lg:text-[2rem]">Cast</p>
+        <div onload="callClick()" class="mt-4 text-lg flex justify-center items-center flex-col">
+            <!-- joey -->
+            <div id="joey" class="lg:flex-row flex-col flex justify-start items-start">
+                <div class="cast-img img w-[100%] lg:w-[45%] ">
+                    <img src="./assets/images/joey.gif" class="w-[100vw]">
+                </div>
+                <div class="joey cast-about mt-2 lg:mt-0 lg:ml-9 lg:w-[60%] w-[100%]">
+                    <p class="font-pac cast-about-heading text-4xl mt-3">Joey Tribbiani</p>
+                    <p class="cast-about-real font-pop mt-3 ml-1"><a class="text-pink-600 hover:text-pink-900 hover:underline duration-200 font-bold" href="https://en.wikipedia.org/wiki/Matt_LeBlanc">Matt LeBlanc</a></p>
+
+                
+                   
+                   <p class="text-center uppercase text-lg bold text-pink-600 tracking-tight"><span class="quote">“</span><span id="joeyTag" class="pl-3 pr-3 p-2 font-pop font-extrabold hover:text-xl hover:text-pink-800 duration-300 cursor-pointer">Hey, How you doin'?</span><span class="quote">”</span></p>
+
+                    <p class="cast-about-para mt-2">Joseph Francis "Joey" Tribbiani Jr., was one of the main characters
+                        on <span class="font-bold hover:text-black hover:underline text-pink-600  duration-200 cursor-pointer"><a href="https://en.wikipedia.org/wiki/Friends">Friends</a></span> (1994–2004) and the
+                        title character in the spin-off <span class="font-bold hover:text-black hover:underline text-pink-600  duration-200 cursor-pointer"><a href="https://en.wikipedia.org/wiki/Joey_(TV_series)">Joey</a></span> (2004–2006). He is
+                        best known for being a ladies' man and a rather silly but adorable personality. He was portrayed
+                        by <span class="font-bold hover:text-black hover:underline text-pink-600  duration-200 cursor-pointer"><a href="https://en.wikipedia.org/wiki/Matt_LeBlanc">Matt LeBlanc</a></span>.</p>
+                    <p class="mt-[1rem]">Joey comes from an Italian-American family of eight children, of which he is
+                        the only male. He is from, and presumably born in, Queens. As a child, he was extremely accident
+                        prone. In <span class="font-bold hover:text-black hover:underline text-pink-600  duration-200 cursor-pointer"><a href="https://friends.fandom.com/wiki/The_One_With_Ross%27_New_Girlfriend">"The One With
+                                Ross' New Girlfriend"</a></span>, it's implied that he was sexually abused as a child by
+                        a tailor, but did not realize this until Chandler went to the same place years later. As a
+                        child, he had an imaginary friend named Maurice, who was a space cowboy. He meets most of the
+                        friends (with the exception of Rachel) as a result of being Chandler's roommate.</p>
+                </div>
+            </div>
+            <!-- chandler -->
+            <div id="chandler" class="flex justify-start items-start flex-col lg:flex-row h-auto mt-9">
+                <div class="cast-img img w-[100%] lg:w-[45%] ">
+                    <img src="./assets/images/chandler.gif" class="w-[100vw]">
+                </div>
+                <div class="chandler cast-about mt-2 lg:mt-0 lg:ml-9 lg:w-[60%] w-[100%]">
+                    <p class="font-pac cast-about-heading text-4xl mt-3">Chandler Bing</p>
+                    <p class="cast-about-real font-pop mt-2 ml-1"><a class="text-pink-600 hover:text-pink-900 hover:underline duration-200 font-bold" href="https://friends.fandom.com/wiki/Matthew_Perry">Matthew Perry</a></p>
+
+                    <p class="text-center uppercase text-lg bold text-pink-600 tracking-tight"><span class="quote">“</span><span id="chandlerTag" class="pl-3 pr-3 p-2 font-pop font-extrabold hover:text-xl hover:text-pink-800 duration-300 cursor-pointer">What did the Police said ?</span><span class="quote">”</span></p>
+
+
+                    <p class="cast-about-para mt-1">Chandler Muriel Bing is one of the main characters on the popular
+                        sitcom <span class="font-bold hover:text-black hover:underline text-pink-600  duration-200 cursor-pointer"><a href="https://en.wikipedia.org/wiki/Friends">Friends</a></span>. He is portrayed by
+                        <span class="font-bold hover:text-black hover:underline text-pink-600  duration-200 cursor-pointer"><a href="https://friends.fandom.com/wiki/Matthew_Perry">Matthew Perry</a></span>. He is
+                        notable for his sarcastic and witty sense of humor.</p>
+                    <p class="mt-1">Throughout most of the series, Chandler is an executive specialized in
+                        statistical analysis and data reconfiguration, occupying high-grade positions such as Processing
+                        Manager and head of the office. He frequently complains about his dislike of his job, even
+                        deciding to quit in Season 9.</p>
+                </div>
+            </div>
+            <!-- Monica -->
+            <div id="monica" class="lg:flex-row flex-col flex justify-start items-start mt-9">
+                <div class="cast-img img w-[100%] lg:w-[45%] ">
+                    <img src="./assets/images/monica.gif" class="w-[100vw]">
+                </div>
+                <div class="monica cast-about mt-2 lg:mt-0 lg:ml-9 lg:w-[60%] w-[100%]">
+                    <p class="font-pac cast-about-heading text-4xl mt-3">Monica Geller</p>
+                    <p class="cast-about-real font-pop mt-2 ml-1"><a class="text-pink-600 hover:text-pink-900 hover:underline duration-200 font-bold" href="https://friends.fandom.com/wiki/Courteney_Cox">Courteney Cox</a></p>
+
+                   
+                   <p class="text-center uppercase text-lg bold text-pink-600 tracking-tight"><span class="quote">“</span><span id="monicaTag" class="pl-3 pr-3 p-2 font-pop font-extrabold hover:text-xl hover:text-pink-800 duration-300 cursor-pointer">I Know !!</span><span class="quote">”</span></p>
+
+
+                    <p class="cast-about-para mt-1">Monica E. Geller is one of the main characters on the popular sitcom <span class="font-bold hover:text-black hover:underline text-pink-600  duration-200 cursor-pointer"><a href="https://en.wikipedia.org/wiki/Friends">Friends</a></span>. (1994–2004), played by <span class="font-bold hover:text-black hover:underline text-pink-600  duration-200 cursor-pointer"><a href="https://friends.fandom.com/wiki/Courteney_Cox">Courteney Cox</a></span>. Monica was known as the "Mother Hen" of the group and her <span class="font-bold hover:text-black hover:underline text-pink-600  duration-200 cursor-pointer"><a href="https://friends.fandom.com/wiki/Monica%27s_Apartment">Greenwich Village apartment</a></span> was one of the group's main gathering places throughout the series.</p>
+                    <p class="mt-1"> Monica was born in 1969. Monica is <span class="font-bold hover:text-black hover:underline text-pink-600  duration-200 cursor-pointer"><a href="#ross">Ross's</a></span> younger sister, and the daughter of Jack and Judy Geller. Monica, like the rest of her family, is Jewish. She had a slightly difficult childhood from Ross, characterized by the bickering which took place between her and her brother (some culminating in memorable events such as the Geller Cup, which took place every Thanksgiving). She also had, and still has, a difficult relationship with her parents (especially with her mother) who unconsciously favors <span class="font-bold hover:text-black hover:underline text-pink-600  duration-200 cursor-pointer"><a href="#ross">Ross's</a></span> over her on various occasions and usually cares about him more than Monica.</p>
+                </div>
+            </div>
+            <!-- Pheobe -->
+            <div id="phoebe" class="lg:flex-row flex-col flex justify-start items-start mt-9">
+                <div class="cast-img img w-[100%] lg:w-[45%] ">
+                    <img src="./assets/images/phoebe.gif" class="w-[100vw]">
+                </div>
+                <div class="monica cast-about mt-2 lg:mt-0 lg:ml-9 lg:w-[60%] w-[100%]">
+                    <p class="font-pac cast-about-heading text-4xl mt-3">Phoebe Buffay</p>
+                    <p class="cast-about-real font-pop mt-2 ml-1"><a class="text-pink-600 hover:text-pink-900 hover:underline duration-200 font-bold" href="https://friends.fandom.com/wiki/Lisa_Kudrow">Lisa Kudrow</a></p>
+
+                    <p class="text-center uppercase text-lg bold text-pink-600 tracking-tight"><span class="quote">“</span><span id="phoebeTag" class="pl-3 pr-3 p-2 font-pop font-extrabold hover:text-xl hover:text-pink-800 duration-300 cursor-pointer">Oh my eyes, my eyes.</span><span class="quote">”</span></p>
+
+                    <p class="cast-about-para mt-1">Phoebe Buffay-Hannigan (née Buffay) is one of the main characters on the popular sitcom <span class="font-bold hover:text-black hover:underline text-pink-600  duration-200 cursor-pointer"><a href="https://en.wikipedia.org/wiki/Friends">Friends</a></span>. (1994–2004), portrayed by <span class="font-bold hover:text-black hover:underline text-pink-600  duration-200 cursor-pointer"><a href="https://friends.fandom.com/wiki/Lisa_Kudrow">Lisa Kudrow</a></span>. She is best known for her bohemian lifestyle, silly wit and guitar playing in <span class="font-bold hover:text-black hover:underline text-pink-600  duration-200 cursor-pointer"><a href=" https://friends.fandom.com/wiki/Central_Perk"> Central Perk</a></span></p>
+                    <p class="mt-1">
+                        Phoebe Buffay and her older twin sister, <span class="font-bold hover:text-black hover:underline text-pink-600  duration-200 cursor-pointer"><a href="https://friends.fandom.com/wiki/Ursula_Buffay"> Ursula </a></span>, are the result of a sexual relationship between Phoebe Abbott, Frank Buffay and Lily Buffay. Phoebe Abbott wasn't ready to be a mother as she didn't mean to get pregnant, so Lily and Frank adopted both twins and raised them together. Frank abandoned Lily and the twins soon after and then later married another unknown woman.
+                    </p>
+                </div>
+            </div>
+            <!-- Ross -->
+            <div id="ross" class="lg:flex-row flex-col flex justify-start items-start mt-9">
+                <div class="cast-img img w-[100%] lg:w-[45%] ">
+                    <img src="./assets/images/ross.gif" class="w-[100vw]">
+                </div>
+                <div class="ross cast-about mt-2 lg:mt-0 lg:ml-9 lg:w-[60%] w-[100%]">
+                    <p class="font-pac cast-about-heading text-4xl mt-3">Ross Geller</p>
+                    <p class="cast-about-real font-pop mt-2 ml-1"><a class="text-pink-600 hover:text-pink-900 hover:underline duration-200 font-bold" href="https://friends.fandom.com/wiki/David_Schwimmer"> David Schwimmer </a></p>
+
+                    <p class="text-center uppercase text-lg bold text-pink-600 tracking-tight"><span class="quote">“</span><span id="rossTag" class="pl-3 pr-3 p-2 font-pop font-extrabold hover:text-xl hover:text-pink-800 duration-300 cursor-pointer">We were on a break</span><span class="quote">”</span></p>
+                    
+                    <p class="cast-about-para mt-[1rem]">
+                        Ross Geller, Ph.D. was one of the main characters on <span class="font-bold hover:text-black hover:underline text-pink-600  duration-200 cursor-pointer"><a href="https://en.wikipedia.org/wiki/Friends">Friends</a></span> (1994–2004). He was portrayed by <span class="font-bold hover:text-black hover:underline text-pink-600  duration-200 cursor-pointer"><a href="https://friends.fandom.com/wiki/David_Schwimmer">David Schwimmer</a></span>. He's best known for his nerdy personality and very awkward sense of humor, much like Screech from Saved By The Bell, or David from Beverly Hills, 90210.
+                    </p>
+                    <p class="mt-1">
+                        He was born to Jack and Judy Geller and raised by them on Long Island, New York. He is <span class="font-bold hover:text-black hover:underline text-pink-600  duration-200 cursor-pointer"><a href="#monica">Monica's</a></span> older brother. When Ross was younger, he dressed up as a woman (with his mother's clothes) and sang, "I am Bea / I drink tea / Won't you dance around with me?". When growing up, he attended the same high school as <span class="font-bold hover:text-black hover:underline text-pink-600  duration-200 cursor-pointer"><a href="#rachel">Rachel</a></span> (as did Monica) where he eventually developed a crush on her and kept it to himself,
+                    </p>
+                </div>
+            </div>
+            <!-- Rachel -->
+            <div id="rachel" class="lg:flex-row flex-col flex justify-start items-start mt-9">
+                <div class="cast-img img w-[100%] lg:w-[45%] ">
+                    <img src="./assets/images/rachel.gif" class="w-[100vw]">
+                </div>
+                <div class="monica cast-about mt-2 lg:mt-0 lg:ml-9 lg:w-[60%] w-[100%]">
+                    <p class="font-pac cast-about-heading text-4xl mt-3">Rachel Greene</p>
+                    <p class="cast-about-real font-pop mt-2 ml-1"><a class="text-pink-600 hover:text-pink-900 hover:underline duration-200 font-bold" href="https://friends.fandom.com/wiki/Jennifer_Aniston"> Jennifer Aniston </a></p>
+
+                    <p class="text-center uppercase text-lg bold text-pink-600 tracking-tight"><span class="quote">“</span><span id="rachelTag" class="pl-3 pr-3 p-2 font-pop font-extrabold hover:text-xl hover:text-pink-800 duration-300 cursor-pointer">There's no more left, left !</span><span class="quote">”</span></p>
+
+                    <p class="cast-about-para mt-[1rem]">
+                        Jennifer Aniston won the hearts of millions as the character Rachel in <span class="font-bold hover:text-black hover:underline text-pink-600  duration-200 cursor-pointer"><a href="https://en.wikipedia.org/wiki/Friends">Friends</a></span>. Rachel Karen Greene was born to wealthy parents and was once a spoiled princess. To add to it, she had two other spoiled sisters. All the Friends fans would already know Rachel’s friendship with <span class="font-bold hover:text-black hover:underline text-pink-600  duration-200 cursor-pointer"><a href="#monica">Monica</a></span> that started at age six, and soon she is introduced to another major character of the show, Monica’s elder brother, <span class="font-bold hover:text-black hover:underline text-pink-600  duration-200 cursor-pointer"><a href="#ross">Ross</a></span>, who had a crush on Rachel.
+                    </p>
+                    <p class="mt-1">
+                        Staying true to her spoiled princess background, Rachel was also a bully to innocent classmates in high school. But after ‘the running away from the wedding’ incident, Rachel reunites with Monica. Her father cuts off her financial ties, because of which Rachel has to work as a waitress. From then on she changes from the spoiled princess and becomes the relatable princess we all know.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <script src="./assets/js/index.js"></script>
+      <script src="./assets/js/voice.js"></script>
+
+    <script>
+        $('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+    </script>
+   
+</body>
+
+</html>
